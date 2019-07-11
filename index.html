@@ -2,16 +2,175 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Fitness</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Fitness</title>
 </head>
 
 <body>
-  <div class="wrapper">
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<span class="logo">Афродита</span>
 
-  </div><!-- .wrapper -->
+				<nav class="menu">
+					<ul class="menu__list">
+						<li class="menu__item active">
+							<span class="menu__link">Главная</span>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">Отзывы</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">Услуги</a>
+						</li>
+					</ul>
+				</nav>
+
+				<div class="contacts">
+					<a href="tel:+78000039210" class="contacts__phone">8 (800) 00-392-10</a>
+					<a href="#" class="contacts__timework">График работы</a>
+				</div><!-- .contacts -->
+			</div><!-- .container -->
+		</header>
+
+		<div class="center">
+			<div class="container">
+				<div class="banner"></div>
+			</div><!-- .container -->
+
+			<section class="features">
+				<div class="container">
+					<h1 class="section-title">Особенности</h1>
+
+					<ul class="features__list">
+						<li class="features__item">
+							<div class="features__img features__img--flower"></div>
+							<h3 class="features__head">Уникальность</h3>
+							<p class="features__subs">
+								Мы делаем все для Вашего комфорта
+							</p>
+							<ul class="features__sublist">
+								<li class="features__plus">Питание включено</li>
+								<li class="features__plus">Багаж (5 кг)</li>
+								<li class="features__plus">Душ/баня</li>
+							</ul>
+						</li>
+
+						<li class="features__item"></li>
+						<li class="features__item"></li>
+					</ul>
+				</div><!-- .container -->
+			</section><!-- .features -->
+
+			<div class="container">
+				<section class="news">
+					<h2 class="section-title">Последние новости</h2>
+
+					<div class="news__block">
+						<div class="news__article">
+							<ul class="review">
+								<li class="review__item">
+									<img src=".." alt="avatar" class="review__img">
+									<div class="review__block">
+										<div class="review__date">12.10.2016</div>
+										<h3 class="review__title">Похудение с помощью бодибилдинга!</h3>
+										<p class="review__text">
+											Вдыхание одного литра кислорода эквивалентно «сжиганию» 5 калорий, однако в минуту при самом
+											высоком темпе движений атлет способен вдохнуть не более 3-4 литров кислорода. Это крайне важно для
+											каждого начинающего атлета.
+										</p>
+									</div><!-- .review__block -->
+								</li>
+
+								<li class="review__item"></li>
+								<li class="review__item"></li>
+							</ul><!-- .review -->
+
+							<div class="pagination">
+								<span class="pagination__text">Страница 1 из 7</span>
+								<div class="pagination__navbar">
+									<a href="#" class="pagination__control disabled">&lsaquo;</a>
+									<ul class="pagination__list">
+										<li class="pagination__item active"><span class="pagination__link">1</span></li>
+										<li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
+										<li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
+										<li class="pagination__item"><a href="#" class="pagination__link">4</a></li>
+										<li class="pagination__item"><a href="#" class="pagination__link">5</a></li>
+										<li class="pagination__item"><a href="#" class="pagination__link">6</a></li>
+										<li class="pagination__item"><a href="#" class="pagination__link">7</a></li>
+									</ul>
+									<a href="#" class="pagination__control">&rsaquo;</a>
+								</div><!-- .pagination__navbar -->
+							</div><!-- .pagination -->
+						</div><!-- .news__article -->
+
+						<aside class="news__top">
+							<h2 class="news__top-title">Топ новостей</h2>
+							<div class="news__top-month">за сентябрь</div>
+
+							<ul class="news__top-list">
+								<li class="news__top-item">
+									<a href="#" class="news__top-link">
+										<img src=".." alt="news1" class="news__top-img">
+									</a>
+								</li>
+								<li class="news__top-item">
+									<a href="#" class="news__top-link">
+										<img src=".." alt="news2" class="news__top-img">
+									</a>
+								</li>
+								<li class="news__top-item">
+									<a href="#" class="news__top-link">
+										<img src=".." alt="news3" class="news__top-img">
+									</a>
+								</li>
+							</ul>
+						</aside>
+					</div><!-- .news__block -->
+				</section><!-- .news -->
+			</div><!-- .container -->
+		</div><!-- .center -->
+
+		<footer class="footer">
+			<div class="container">
+				<div class="info">
+					<p class="info__text">
+						Сделано с любовью и старанием на курсе «HTML + CSS» в
+						<a href="https://loftschool.com/" class="info__link info__link--school">LoftSchool</a>
+						<br>
+						Автор работы:
+						<a href="https://vk.com/d.toropin" target="_blank" class="info__link">Торопин Денис</a>
+					</p>
+				</div><!-- .info -->
+
+				<span class="logo">Афродита</span>
+
+				<div class="social">
+					<h3 class="social__title">Наши социальные сети</h3>
+
+					<ul class="social__list">
+						<li class="social__item">
+							<a href="#" class="social__link social__link--vk"></a>
+						</li>
+						<li class="social__item">
+							<a href="#" class="social__link social__link--fb"></a>
+						</li>
+						<li class="social__item">
+							<a href="#" class="social__link social__link--gplus"></a>
+						</li>
+						<li class="social__item">
+							<a href="#" class="social__link social__link--tw"></a>
+						</li>
+						<li class="social__item">
+							<a href="#" class="social__link social__link--email"></a>
+						</li>
+					</ul>
+				</div><!-- .social -->
+			</div><!-- .container -->
+		</footer>
+	</div><!-- .wrapper -->
 </body>
 
 </html>

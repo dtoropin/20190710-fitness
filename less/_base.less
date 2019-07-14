@@ -1,0 +1,64 @@
+body {
+	font-family: 'OpenSans', sans-serif;
+	font-size: 14px;
+	color: #221f1f;
+}
+
+.wrapper {
+	min-width: 1100px;
+}
+
+.container {
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1060px;
+	margin: 0 auto;
+}
+
+.header,
+.features,
+.footer {
+	background: #131415;
+	color: #fff;
+}
+
+.header {
+	padding-top: 20px;
+	padding-bottom: 15px;
+	margin-bottom: 80px;
+
+	& > .container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.banner {
+	height: 486px;
+	background: url(../images/banner.jpg) no-repeat center;
+	margin-bottom: 60px;
+}
+
+.section-title {
+	font-size: 3.5em; // 49px
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 45px;
+	text-align: center;
+}
+
+.news {
+	padding: 65px 0;
+
+	&__block {
+		display: flex;
+	}
+}
+
+.footer > .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 0;
+}

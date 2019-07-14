@@ -1,0 +1,33 @@
+.news-top {
+	min-width: 165px;
+
+	&__title {
+		color: #221f1f;
+		font-size: 0.8571em; // 12px
+		letter-spacing: 3px;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+	}
+
+	&__month {
+		display: block;
+		color: #656464;
+		margin-top: 10px;
+	}
+
+	&__item {
+		width: 166px;
+		margin-bottom: 20px;
+	}
+
+	&__img {
+		width: 100%;
+		height: auto;
+		opacity: 0.8;
+		transition: .25s opacity linear;
+	}
+
+	&__link:hover > .news-top__img {
+		opacity: 1;
+	}
+}

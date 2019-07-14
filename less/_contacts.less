@@ -1,0 +1,64 @@
+.contacts {
+	font-style: normal;
+	text-align: right;
+	position: relative;
+
+	&__phone {
+		display: block;
+		font-size: 1.5em; // 21px
+		font-weight: 700;
+		margin-bottom: 5px;
+	}
+
+	&__timework {
+		opacity: 0.7;
+		font-weight: 700;
+		color: #f89513;
+		border-bottom: 1px solid #f89513;
+
+		&:hover {
+			color: #fff;
+			border-bottom: 1px solid #fff;
+
+			& + .contacts__popup {
+				display: block;
+			}
+		}
+	}
+
+	&__popup {
+		display: none;
+		position: absolute;
+		top: 65px;
+		left: 28px;
+		padding: 15px 10px;
+		border-radius: 3px;
+		box-shadow: 2.5px 4.3px 5px rgba(0, 0, 0, 0.2);
+		text-align: left;
+
+		&-days {
+			color: #f89513;
+			font-weight: 700;
+			margin-bottom: 10px;
+			white-space: nowrap;
+		}
+
+		&-dinner {
+			color: #221f1f;
+		}
+
+		&::before {
+			content: '';
+			display: inline-block;
+			position: absolute;
+			top: -13px;
+			right: 0;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 0 13px 14px 13px;
+			border-radius: 4px;
+			border-color: transparent transparent #ffffff transparent;
+		}
+	}
+}

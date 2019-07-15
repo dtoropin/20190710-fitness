@@ -1,0 +1,22 @@
+.partners {
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	&__item {
+		margin-bottom: 50px;
+		width: 280px;
+		text-align: center;
+	}
+
+	&__link {
+		filter: grayscale(1);
+		transition: .25s all linear;
+
+		&:hover {
+			filter: grayscale(0);
+		}
+	}
+}

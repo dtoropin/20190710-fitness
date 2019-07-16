@@ -14,10 +14,15 @@
 		&:first-child {
 			margin-left: 0;
 		}
+
+		&.active > .menu__link {
+			pointer-events: none;
+		}
 	}
 
 	&__link {
-		padding-left: 40px;
+		display: block;
+		padding: 10px 10px 10px 40px;
 		background: no-repeat center left;
 
 		&--disp {

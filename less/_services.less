@@ -10,75 +10,60 @@
 	&__item {
 		width: 252px;
 		margin-bottom: 45px;
+	}
 
-		&-img {
-			position: relative;
-			height: 155px;
-			border-radius: 3px;
-			margin-bottom: 25px;
+	&__img {
+		position: relative;
+		height: 155px;
+		border-radius: 3px;
+		margin-bottom: 25px;
+		overflow: hidden;
 
-			&--item1 {
-				background: url(../images/service1.jpg) center;
-			}
-			&--item2 {
-				background: url(../images/service2.jpg) center;
-			}
-			&--item3 {
-				background: url(../images/service3.jpg) center;
-			}
-			&--item4 {
-				background: url(../images/service4.jpg) center;
-			}
-			&--item5 {
-				background: url(../images/service5.jpg) center;
-			}
-			&--item6 {
-				background: url(../images/service6.jpg) center;
-			}
+		& > img {
+			width: 100%;
 		}
+	}
 
-		&-overlay {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			padding: 10px;
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			border-radius: 3px;
-			background-color: rgba(0,0,0,.52);
-			color: #fff;
-			transition: .25s opacity linear;
-			cursor: pointer;
+	&__overlay {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 10px;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		border-radius: 3px;
+		background-color: rgba(0,0,0,.52);
+		color: #fff;
+		transition: .25s opacity linear;
 
-			&:hover {
-				opacity: 0;
-			}
+		&:hover {
+			opacity: 0;
 		}
+	}
 
-		&-title {
-			font-size: 1.714em; // 24px
-			font-weight: 700;
-			text-transform: uppercase;
-			line-height: 1.4em;
-			color: #fff;
-		}
+	&__title {
+		font-size: 1.714em; // 24px
+		font-weight: 700;
+		text-transform: uppercase;
+		line-height: 1.4em;
+		color: #fff;
+	}
 
-		&-vip {
-			display: block;
-			color: #ec1e79;
-		}
+	&__vip {
+		display: block;
+		color: #ec1e79;
+	}
 
-		&-head {
-			font-size: 1.286em; // 18px
-			font-weight: 700;
-			margin-bottom: 20px;
-		}
+	&__head {
+		font-size: 1.286em; // 18px
+		font-weight: 700;
+		margin-bottom: 20px;
+	}
 
-		&-text {
-			line-height: 1.4em;
-		}
+	&__text {
+		line-height: 1.4em;
 	}
 }

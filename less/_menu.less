@@ -23,18 +23,18 @@
 	&__link {
 		display: block;
 		padding: 10px 10px 10px 40px;
-		background: no-repeat center left;
+		&:extend(.iconsheet);
 
 		&--disp {
-			background-image: url(../images/disp_icon.png);
+			.icon(-10px, -1px);
 		}
 
 		&--star {
-			background-image: url(../images/star_icon.png);
+			.icon(-10px, -230px);
 		}
 
 		&--service {
-			background-image: url(../images/service_icon.png);
+			.icon(-10px, -160px);
 		}
 	}
 }
@@ -46,15 +46,15 @@
 
 .menu__item.active > .menu__link--disp,
 .menu__link--disp:hover {
-	background-image: url(../images/disp_icon_hover.png);
+	.icon(-10px, -35px);
 }
 
 .menu__item.active > .menu__link--star,
 .menu__link--star:hover {
-	background-image: url(../images/star_icon_hover.png);
+	.icon(-10px, -268px);
 }
 
 .menu__item.active > .menu__link--service,
 .menu__link--service:hover {
-	background-image: url(../images/service_icon_hover.png);
+	.icon(-10px, -194px);
 }

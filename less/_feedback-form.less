@@ -1,16 +1,19 @@
 .feedback-form {
-	&__top {
+	&__row {
 		display: flex;
 		justify-content: space-between;
-
-		& > .feedback-form__item {
-			width: 48%;
-		}
+		align-items: flex-end;
+		margin-bottom: 20px;
 	}
 
 	&__item {
 		display: block;
-		margin-bottom: 20px;
+		flex: 1;
+		margin-right: 20px;
+
+		&:last-child {
+			margin-right: 0;
+		}
 	}
 
 	&__head {
@@ -38,16 +41,6 @@
 
 		&:focus {
 			border: 1px solid #f89513;
-		}
-	}
-
-	&__bottom {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-
-		& > .feedback-form__item {
-			margin-bottom: 0;
 		}
 	}
 

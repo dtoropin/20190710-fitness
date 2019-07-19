@@ -20,10 +20,11 @@ body {
 	}
 
 	&-form {
-		width: 560px;
+		max-width: 560px;
 		padding: 50px 70px;
 		margin: 0 auto;
 		background: #f3f3f3;
+		box-sizing: border-box;
 	}
 }
 
@@ -39,12 +40,13 @@ body {
 	padding-top: 20px;
 	padding-bottom: 15px;
 	margin-bottom: 80px;
+}
 
-	& > .container {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
+.header > .container,
+.footer > .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .banner {
@@ -76,6 +78,7 @@ body {
 	}
 
 	&__article {
+		width: 83.02%; // 880px
 		margin-right: 25px;
 	}
 }
@@ -84,9 +87,6 @@ body {
 	margin-bottom: 50px;
 }
 
-.footer > .container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+.footer {
 	padding: 15px 0;
 }

@@ -1,4 +1,15 @@
 .partners {
+	border: 1px solid black;
+	padding: 25px;
+	margin-bottom: 30px;
+
+	&__title {
+		font-size: 1.286em; // 18px
+		text-transform: uppercase;
+		text-align: center;
+		margin-bottom: 50px;
+	}
+
 	&__list {
 		display: flex;
 		flex-wrap: wrap;
@@ -9,6 +20,10 @@
 		margin-bottom: 50px;
 		width: 280px;
 		text-align: center;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 
 	&__link {

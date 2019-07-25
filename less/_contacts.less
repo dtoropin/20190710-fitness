@@ -4,63 +4,80 @@
 	position: relative;
 
 	&__phone {
-		display: block;
-		font-size: 1.5em; // 21px
+		color: #fff;
+		font-size: 1.49em;
 		font-weight: 700;
-		margin-bottom: 5px;
+		display: block;
+		line-height: 1.4;
 	}
 
 	&__timework {
-		opacity: 0.7;
-		font-weight: 700;
-		color: #f89513;
-		border-bottom: 1px solid #f89513;
+		position: relative;
+		display: inline-block;
+		color: rgba(248, 149, 19,.7);
+		font-family: 'OpenSans', sans-serif;
+		border-bottom: 1px solid rgba(248, 149, 19,.7);
 		transition: .2s all linear;
 		cursor: pointer;
 
 		&:hover {
-			color: #fff;
-			border-bottom: 1px solid #fff;
+			color: rgba(255, 255, 255,.7);
+			border-bottom: 1px solid rgba(255, 255, 255,.7);
 
-			& + .contacts__popup {
-				display: block;
+			& .contacts__popup {
+				right: 0;
+				opacity: 1;
 			}
 		}
 	}
 
 	&__popup {
-		display: none;
+		opacity: 0;
 		position: absolute;
-		top: 65px;
-		left: 28px;
-		padding: 15px 10px;
-		border-radius: 3px;
-		box-shadow: 2.5px 4.3px 5px rgba(0, 0, 0, 0.2);
-		text-align: left;
+		top: 100%;
+		right: 9999px;
+		z-index: 5;
+		transition: .4s opacity ease;
+		cursor: default;
+
+		&::before {
+			content: '';
+			display: block;
+			height: 20px;
+		}
+		
+		&-block {
+			width: 125px;
+			background: rgb(255, 255, 255);
+			z-index: 5;
+			padding: 15px 9px;
+			border-radius: 3px;
+			text-align: left;
+			box-shadow: 2.5px 4.3px 5px rgba(0, 0, 0, 0.2);
+
+			&::before {
+				content: '';
+				display: inline-block;
+				position: absolute;
+				top: 8px;
+				right: 0;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 0 13px 14px 13px;
+				border-radius: 3px;
+				border-color: transparent transparent #ffffff transparent;
+			}
+		}
 
 		&-days {
-			color: #f89513;
+			color: rgb(248, 149, 19);
 			font-weight: 700;
 			margin-bottom: 10px;
-			white-space: nowrap;
 		}
 
 		&-dinner {
 			color: #221f1f;
-		}
-
-		&::before {
-			content: '';
-			display: inline-block;
-			position: absolute;
-			top: -13px;
-			right: 0;
-			width: 0;
-			height: 0;
-			border-style: solid;
-			border-width: 0 13px 14px 13px;
-			border-radius: 4px;
-			border-color: transparent transparent #ffffff transparent;
 		}
 	}
 }

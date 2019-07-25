@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="css/style.min.css">
-	<title>Fitness | Главная</title>
+	<title>Афродита | Главная</title>
 </head>
 
 <body>
@@ -15,95 +15,112 @@
 			<div class="container">
 				<span class="logo">Афродита</span>
 
-				<nav class="menu">
-					<ul class="menu__list">
-						<li class="menu__item active">
-							<a href="main.html" class="menu__link menu__link--disp">Главная</a>
-						</li>
-						<li class="menu__item">
-							<a href="comments.html" class="menu__link menu__link--star">Отзывы</a>
-						</li>
-						<li class="menu__item">
-							<a href="services.html" class="menu__link menu__link--service">Услуги</a>
-						</li>
-					</ul>
-				</nav>
-
 				<address class="contacts">
 					<a href="tel:+78000039210" class="contacts__phone">8 (800) 00-392-10</a>
-					<span class="contacts__timework">График работы</span>
-					<div class="contacts__popup">
-						<div class="contacts__popup-days">пн-вс: 09:00-20:00</div>
-						<div class="contacts__popup-dinner">обед: 14:00-14:30</div>
-					</div><!-- .contacts__popup -->
+					<div class="contacts__timework">
+						График работы
+						<div class="contacts__popup">
+							<div class="contacts__popup-block">
+								<div class="contacts__popup-days">пн-вс: 09:00-20:00</div>
+								<div class="contacts__popup-dinner">обед: 14:00-14:30</div>
+							</div><!-- .contacts__popup-block -->
+						</div><!-- .contacts__popup -->
+					</div><!-- .contacts__timework -->
 				</address><!-- .contacts -->
 			</div><!-- .container -->
 		</header>
 
+		<div class="top">
+			<div class="container">
+				<aside class="sidebar">
+					<nav class="menu menu--main">
+						<ul class="menu__list">
+							<li class="menu__item active">
+								<a href="main.html" class="menu__link menu__link--disp">Главная</a>
+							</li>
+							<li class="menu__item">
+								<a href="comments.html" class="menu__link menu__link--star">Отзывы</a>
+							</li>
+							<li class="menu__item">
+								<a href="services.html" class="menu__link menu__link--service">Услуги</a>
+							</li>
+						</ul>
+					</nav>
+
+					<div class="features__item">
+						<h3 class="features__title">Особенность</h3>
+						<h4 class="features__head">Уникальность</h4>
+						<p class="features__subs">
+							Мы делаем все, для Вашего комфорта
+						</p>
+						<ul class="features__sublist">
+							<li class="features__plus">Питание включено</li>
+							<li class="features__plus">Багаж (5 кг)</li>
+							<li class="features__plus">Душ/баня</li>
+						</ul>
+					</div><!-- .features__item -->
+				</aside>
+				<section class="top__banner">
+					<div class="banner"></div>
+				</section>
+			</div><!-- .container -->
+		</div><!-- .top -->
+
 		<main class="center">
 			<div class="container">
-				<div class="banner"></div>
-			</div><!-- .container -->
-
-			<section class="features">
-				<div class="container">
-					<h1 class="section-title section-title--center">Особенности</h1>
-
-					<ul class="features__list">
-						<li class="features__item">
-							<div class="features__img">
-								<img src="images/flower.png" alt="flower">
-							</div>
-							<h3 class="features__head">Уникальность</h3>
-							<p class="features__subs">
-								Мы делаем все для Вашего комфорта
-							</p>
-							<ul class="features__sublist">
-								<li class="features__plus">Питание включено</li>
-								<li class="features__plus">Багаж (5 кг)</li>
-								<li class="features__plus">Душ/баня</li>
-							</ul>
-						</li>
-
-						<li class="features__item">
-							<div class="features__img">
-								<img src="images/star.png" alt="star">
-							</div>
-							<h3 class="features__head">премиум-класс</h3>
-							<p class="features__subs">
-								Наш зал оборудован тренажёрами A-класса
-							</p>
-							<ul class="features__sublist">
-								<li class="features__plus">Качество</li>
-								<li class="features__plus">Продуктивность</li>
-								<li class="features__plus">Результат</li>
-							</ul>
-						</li>
-
-						<li class="features__item">
-							<div class="features__img">
-								<img src="images/palette.png" alt="palette">
-							</div>
-							<h3 class="features__head">личный тренер</h3>
-							<p class="features__subs">
-								Тренер сделает всё для вашего результата
-							</p>
-							<ul class="features__sublist">
-								<li class="features__plus">Программа</li>
-								<li class="features__plus">Питание</li>
-								<li class="features__plus">План тренеровок</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-			</section><!-- .features -->
-
-			<div class="container">
 				<section class="news">
-					<h2 class="section-title">Последние новости</h2>
-
 					<div class="news__block">
+
+						<aside class="news-top">
+							<h3 class="news-top__title">
+								Топ новостей
+								<span class="news-top__month">за сентябрь</span>
+							</h3>
+
+							<ul class="news-top__list">
+								<li class="news-top__item">
+									<a href="#" class="news-top__link">
+										<img src="images/news-top1.jpg" alt="Fitness man" class="news-top__img">
+									</a>
+								</li>
+								<li class="news-top__item">
+									<a href="#" class="news-top__link">
+										<img src="images/news-top2.jpg" alt="Food" class="news-top__img">
+									</a>
+								</li>
+								<li class="news-top__item">
+									<a href="#" class="news-top__link">
+										<img src="images/news-top3.jpg" alt="Dumbbells" class="news-top__img">
+									</a>
+								</li>
+							</ul>
+
+							<div class="social">
+								<h3 class="social__title">Наши социальные сети</h3>
+
+								<ul class="social__list">
+									<li class="social__item">
+										<a href="#" class="social__link social__link--vk"></a>
+									</li>
+									<li class="social__item">
+										<a href="#" class="social__link social__link--fb"></a>
+									</li>
+									<li class="social__item">
+										<a href="#" class="social__link social__link--gplus"></a>
+									</li>
+									<li class="social__item">
+										<a href="#" class="social__link social__link--tw"></a>
+									</li>
+									<li class="social__item">
+										<a href="#" class="social__link social__link--email"></a>
+									</li>
+								</ul>
+							</div><!-- .social -->
+						</aside>
+
 						<div class="news__article">
+							<h2 class="section-title">Последние новости</h2>
+
 							<ul class="review">
 								<li class="review__item">
 									<div class="review__img">
@@ -155,31 +172,6 @@
 								</li>
 							</ul><!-- .review -->
 						</div><!-- .news__article -->
-
-						<aside class="news-top">
-							<h3 class="news-top__title">
-								Топ новостей
-								<span class="news-top__month">за сентябрь</span>
-							</h3>
-
-							<ul class="news-top__list">
-								<li class="news-top__item">
-									<a href="#" class="news-top__link">
-										<img src="images/news-top1.jpg" alt="Fitness man" class="news-top__img">
-									</a>
-								</li>
-								<li class="news-top__item">
-									<a href="#" class="news-top__link">
-										<img src="images/news-top2.jpg" alt="Food" class="news-top__img">
-									</a>
-								</li>
-								<li class="news-top__item">
-									<a href="#" class="news-top__link">
-										<img src="images/news-top3.jpg" alt="Dumbbells" class="news-top__img">
-									</a>
-								</li>
-							</ul>
-						</aside>
 					</div><!-- .news__block -->
 
 					<div class="pagination">
@@ -216,28 +208,6 @@
 				</div><!-- .info -->
 
 				<span class="logo">Афродита</span>
-
-				<div class="social">
-					<h3 class="social__title">Наши социальные сети</h3>
-
-					<ul class="social__list">
-						<li class="social__item">
-							<a href="#" class="social__link social__link--vk"></a>
-						</li>
-						<li class="social__item">
-							<a href="#" class="social__link social__link--fb"></a>
-						</li>
-						<li class="social__item">
-							<a href="#" class="social__link social__link--gplus"></a>
-						</li>
-						<li class="social__item">
-							<a href="#" class="social__link social__link--tw"></a>
-						</li>
-						<li class="social__item">
-							<a href="#" class="social__link social__link--email"></a>
-						</li>
-					</ul>
-				</div><!-- .social -->
 			</div><!-- .container -->
 		</footer>
 	</div><!-- .wrapper -->

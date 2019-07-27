@@ -259,6 +259,10 @@ body {
   padding-bottom: 17px;
   margin-bottom: 26px;
 }
+.logo:not(.logo--main):hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
 .banner {
   height: 486px;
   background: url(../images/banner.jpg) no-repeat center;
@@ -470,6 +474,11 @@ body {
   font-weight: 700;
   display: block;
   margin-bottom: 3px;
+  -webkit-transition: .3s color ease;
+  transition: .3s color ease;
+}
+.contacts__phone:hover {
+  color: rgba(248, 149, 19, 0.7);
 }
 .contacts__timework {
   position: relative;
@@ -477,8 +486,8 @@ body {
   color: rgba(248, 149, 19, 0.7);
   font-family: 'OpenSans', sans-serif;
   border-bottom: 1px solid rgba(248, 149, 19, 0.7);
-  -webkit-transition: .2s all linear;
-  transition: .2s all linear;
+  -webkit-transition: .2s all ease;
+  transition: .2s all ease;
   cursor: pointer;
 }
 .contacts__timework:hover {
@@ -874,8 +883,8 @@ body {
   height: 18px;
   border-radius: 50%;
   border: 1px solid #c9c9c9;
-  -webkit-transition: color .3s ease;
-  transition: color .3s ease;
+  -webkit-transition: border-color 0.3s ease;
+  transition: border-color 0.3s ease;
 }
 .feedback-form__radio-custom > .feedback-form__radio-center {
   position: absolute;

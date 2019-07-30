@@ -8,7 +8,7 @@
 		font-size: 1.49em;
 		font-weight: 700;
 		display: block;
-		margin-bottom: 3px;
+		line-height: 1.4;
 		transition: .3s color ease;
 
 		&:hover {
@@ -16,20 +16,22 @@
 		}
 	}
 
+	&__link {
+		color: rgba(248, 149, 19,.7);
+		border-bottom: 1px solid rgba(248, 149, 19,.7);
+		transition: .2s all linear;
+	}
+
 	&__timework {
 		position: relative;
 		display: inline-block;
-		color: rgba(248, 149, 19,.7);
 		font-family: 'OpenSans', sans-serif;
-		border-bottom: 1px solid rgba(248, 149, 19,.7);
-		transition: .2s all ease;
-		cursor: pointer;
 
-		&:hover {
+		&:hover .contacts__link {
 			color: rgba(255, 255, 255,.7);
 			border-bottom: 1px solid rgba(255, 255, 255,.7);
 
-			& .contacts__popup {
+			& + .contacts__popup {
 				right: 0;
 				opacity: 1;
 			}
@@ -37,13 +39,12 @@
 	}
 
 	&__popup {
+		z-index: 5;
 		opacity: 0;
 		position: absolute;
 		top: 100%;
 		right: 9999px;
-		z-index: 5;
 		transition: .4s opacity ease;
-		cursor: default;
 
 		&::before {
 			content: '';
@@ -53,7 +54,7 @@
 		
 		&-block {
 			width: 125px;
-			background: rgb(255, 255, 255);
+			background: #ffffff;
 			z-index: 5;
 			padding: 15px 9px;
 			border-radius: 3px;

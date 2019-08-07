@@ -13,7 +13,7 @@
 <body>
 	<div class="wrapper">
 		<header class="header">
-			<div class="container container--flex">
+			<div class="container container--flex container--phone">
 				<span class="logo logo--main">Афродита</span>
 
 				<address class="contacts">
@@ -31,10 +31,10 @@
 			</div><!-- .container -->
 		</header>
 
-		<div class="top">
-			<div class="container container--flex">
+		<main class="center">
+			<div class="container container--flex container--mobile">
 				<aside class="sidebar">
-					<nav class="menu menu--main">
+					<nav class="menu menu--main menu--mobile">
 						<ul class="menu__list">
 							<li class="menu__item active">
 								<a href="main.html" class="menu__link menu__link--disp">Главная</a>
@@ -59,65 +59,62 @@
 							<li class="features__plus">Багаж (5 кг)</li>
 							<li class="features__plus">Душ/баня</li>
 						</ul>
-					</div><!-- .features__item -->
-				</aside>
+					</div><!-- .features -->
 
-				<div class="banner"></div>
-			</div><!-- .container -->
-		</div><!-- .top -->
+					<div class="news-top">
+						<h3 class="news-top__title">
+							Топ новостей
+							<span class="news-top__month">за сентябрь</span>
+						</h3>
 
-		<main class="center">
-			<div class="container container--flex">
-				<section class="news">
-					<div class="news__block container--flex">
+						<ul class="news-top__list">
+							<li class="news-top__item">
+								<a href="#" class="news-top__link">
+									<img src="images/news-top1.jpg" alt="Fitness man" class="news-top__img">
+								</a>
+							</li>
+							<li class="news-top__item">
+								<a href="#" class="news-top__link">
+									<img src="images/news-top2.jpg" alt="Food" class="news-top__img">
+								</a>
+							</li>
+							<li class="news-top__item">
+								<a href="#" class="news-top__link">
+									<img src="images/news-top3.jpg" alt="Dumbbells" class="news-top__img">
+								</a>
+							</li>
+						</ul>
 
-						<aside class="news-top">
-							<h3 class="news-top__title">
-								Топ новостей
-								<span class="news-top__month">за сентябрь</span>
-							</h3>
+						<div class="social">
+							<h3 class="social__title">Наши социальные сети</h3>
 
-							<ul class="news-top__list">
-								<li class="news-top__item">
-									<a href="#" class="news-top__link">
-										<img src="images/news-top1.jpg" alt="Fitness man" class="news-top__img">
-									</a>
+							<ul class="social__list">
+								<li class="social__item">
+									<a href="#" class="social__link social__link--vk"></a>
 								</li>
-								<li class="news-top__item">
-									<a href="#" class="news-top__link">
-										<img src="images/news-top2.jpg" alt="Food" class="news-top__img">
-									</a>
+								<li class="social__item">
+									<a href="#" class="social__link social__link--fb"></a>
 								</li>
-								<li class="news-top__item">
-									<a href="#" class="news-top__link">
-										<img src="images/news-top3.jpg" alt="Dumbbells" class="news-top__img">
-									</a>
+								<li class="social__item">
+									<a href="#" class="social__link social__link--gplus"></a>
+								</li>
+								<li class="social__item">
+									<a href="#" class="social__link social__link--tw"></a>
+								</li>
+								<li class="social__item">
+									<a href="#" class="social__link social__link--email"></a>
 								</li>
 							</ul>
+						</div><!-- .social -->
+					</div>
+				</aside>
 
-							<div class="social">
-								<h3 class="social__title">Наши социальные сети</h3>
+				<section class="content">
+					<div class="banner">
+						<div class="banner__img"></div>
+					</div>
 
-								<ul class="social__list">
-									<li class="social__item">
-										<a href="#" class="social__link social__link--vk"></a>
-									</li>
-									<li class="social__item">
-										<a href="#" class="social__link social__link--fb"></a>
-									</li>
-									<li class="social__item">
-										<a href="#" class="social__link social__link--gplus"></a>
-									</li>
-									<li class="social__item">
-										<a href="#" class="social__link social__link--tw"></a>
-									</li>
-									<li class="social__item">
-										<a href="#" class="social__link social__link--email"></a>
-									</li>
-								</ul>
-							</div><!-- .social -->
-						</aside>
-
+					<div class="container--flex">
 						<div class="news__article">
 							<h1 class="section-title">Последние новости</h1>
 
@@ -172,7 +169,7 @@
 								</li>
 							</ul><!-- .review -->
 						</div><!-- .news__article -->
-					</div><!-- .news__block -->
+					</div><!-- .container--flex -->
 
 					<div class="pagination">
 						<span class="pagination__text">Страница 1 из 7</span>
@@ -191,12 +188,12 @@
 						</div><!-- .pagination__navbar -->
 					</div><!-- .pagination -->
 
-				</section><!-- .news -->
+				</section><!-- .content -->
 			</div><!-- .container -->
 		</main><!-- .center -->
 
 		<footer class="footer">
-			<div class="container container--flex">
+			<div class="container container--flex container--phone">
 				<div class="info">
 					<p class="info__text">
 						Сделано с любовью и старанием на курсе «HTML + CSS» в

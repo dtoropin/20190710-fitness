@@ -9,7 +9,7 @@ body {
 }
 
 .wrapper {
-	min-width: 1200px;
+	min-width: 320px;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -29,7 +29,7 @@ body {
 
 	&-form {
 		max-width: 767px;
-		padding: 50px 70px;
+		padding: 50px 9.13%;
 		margin: 0 auto;
 		background: #f3f3f3;
 		box-sizing: border-box;
@@ -52,8 +52,13 @@ body {
 }
 
 .banner {
-	height: 486px;
-	background: url(../images/banner.jpg) no-repeat center;
+	&__img {
+		// height: 486px;
+		width: 100%;
+		padding-bottom: 56.1849710982659%;
+		background: url(../images/banner.jpg) no-repeat center;
+		background-size: contain;
+	}
 }
 
 .aside-title {
@@ -78,8 +83,6 @@ body {
 	}
 }
 
-.banner,
-.news__article,
 .content {
 	width: 74.57%; // 865px
 }
@@ -90,6 +93,7 @@ body {
 
 .sidebar {
 	width: 23.71%; // 275px
+	text-align: center;
 }
 
 .content {

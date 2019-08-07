@@ -13,7 +13,7 @@
 <body>
 	<div class="wrapper">
 		<header class="header">
-			<div class="container container--flex">
+			<div class="container container--flex container--phone">
 				<a href="main.html" class="logo">Афродита</a>
 
 				<address class="contacts">
@@ -32,10 +32,10 @@
 		</header>
 
 		<div class="center">
-			<div class="container container--flex">
+			<div class="container container--flex container--mobile">
 
 				<aside class="sidebar">
-					<nav class="menu">
+					<nav class="menu menu--mobile">
 						<ul class="menu__list">
 							<li class="menu__item">
 								<a href="main.html" class="menu__link menu__link--disp">Главная</a>
@@ -135,7 +135,9 @@
 							</li>
 
 							<li class="review__item">
-								<div class="review__img"></div>
+								<div class="review__img">
+									<img src="images/comment0.jpg" alt="Default pictures">
+								</div>
 								<div class="review__block">
 									<time datetime="2015-12-22" class="review__date">22.12.2015</time>
 									<h3 class="review__title">Владимир Савельев</h3>
@@ -187,7 +189,7 @@
 							<h2 class="section-title section-title--form">Оставить отзыв</h2>
 
 							<form class="feedback-form">
-								<div class="feedback-form__row">
+								<div class="feedback-form__row feedback-form__row--mobile">
 									<label class="feedback-form__item">
 										<span class="feedback-form__head">Ваше имя</span>
 										<input type="text" name="username" class="feedback-form__input" required placeholder="Андрей">
@@ -208,7 +210,7 @@
 									</label>
 								</div><!-- .feedback-form__row -->
 
-								<div class="feedback-form__row">
+								<div class="feedback-form__row feedback-form__row--mobile">
 									<div class="feedback-form__item">
 										<span class="feedback-form__head">Отображать фото в отзыве?</span>
 
@@ -245,7 +247,7 @@
 		</div><!-- .center -->
 
 		<footer class="footer">
-			<div class="container container--flex">
+			<div class="container container--flex container--phone">
 				<div class="info">
 					<p class="info__text">
 						Сделано с любовью и старанием на курсе «HTML + CSS» в
